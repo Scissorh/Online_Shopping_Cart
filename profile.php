@@ -156,7 +156,7 @@ session_start();
 
 
             </div>
-            <div class="col-md-10 col-lg-10">
+            <div class="col-md-10 col-lg-10 text-center">
                 <?php
                 get_order();
                 if (isset($_GET['edit_account'])) {
@@ -164,6 +164,9 @@ session_start();
                 }
                 if (isset($_GET['my_orders'])) {
                     include('./user_orders.php');
+                }
+                if (isset($_GET['delete_account'])) {
+                    include('./delete_account.php');
                 }
                 ?>
             </div>
